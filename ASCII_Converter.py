@@ -28,7 +28,7 @@ Warning: if improper or nonexistent filenames and values are inputted
 
 #Choose the image to convert here
 print('\n' + 'The image must come from the resources folder that is in the same location as this program' + '\n')
-print('Input the image in this format: resources/imagename.jpg')
+print('Input the image using the exact filepath:')
 newimage = input()
 image = Image.open(newimage)
 
@@ -70,7 +70,7 @@ finalImage = ImageDraw.Draw(outputImage)
 style = ImageFont.truetype('C:\\Windows\\Fonts\\lucon.ttf', 16)
 
 #Running through the dimensions
-print('Parsing pixel data and substituting characters...')
+print('Parsing pixel data and substituting characters...  (this may take a while!)')
 for i in range(scaledimageHeight):
 	for j in range(scaledimageWidth):
 
@@ -96,7 +96,7 @@ for i in range(scaledimageHeight):
 outputImage.save('output.jpg')
 print('Image creation completed!')
 sleep(0.5)
-print('\n' + ''' The new image was saved as output.jpg and the raw text was created at output.txt
+print('\n' + '''The new image was saved as output.jpg and the raw text was created at output.txt
 The program will close in 10 seconds.''')
 sleep(10)
 
