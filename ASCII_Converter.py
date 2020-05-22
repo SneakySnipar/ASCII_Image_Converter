@@ -65,7 +65,7 @@ print('Scaled image dimensions: %s x %s' % (scaledimageWidth, scaledimageHeight)
 pixels = image.load()
 
 #Creating the output image and the font to be used
-outputImage = Image.new('RGB', (charWidth*scaledimageWidth, charHeight*scaledimageHeight), color = (0,0,0))
+outputImage = Image.new('RGB', (charWidth*scaledimageWidth, charHeight*scaledimageHeight), color = (75,75,75))
 finalImage = ImageDraw.Draw(outputImage)
 style = ImageFont.truetype('C:\\Windows\\Fonts\\lucon.ttf', 16)
 
